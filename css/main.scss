@@ -1,0 +1,115 @@
+$primary-color: #2f80ed;
+$secondary-color: #333333;
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+* {
+    color: $secondary-color;
+}
+
+h1 {
+    color: $primary-color;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    color: $secondary-color;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: $primary-color;
+}
+
+a {
+    color: $primary-color;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+.cv {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.description {
+    display: flex;
+
+    &__foto {
+        width: 40%;
+        margin-right: 1em;
+        & > img {
+            width: 200px;
+            
+        }
+    }
+}
+
+.contacts {
+    margin-bottom: 2em;
+}
+
+.contact {
+    display: flex;
+
+    &__type {
+        min-width: 90px;
+    }
+}
+
+.experience {
+    display: flex;
+    margin-bottom: 2em;
+    &__date {
+        min-width: 300px;
+        margin-bottom: 1em;
+    }
+    &__name {
+        font-size: bold;
+    }
+}
+
+.skill {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #2196F3;
+}
+
+.html {
+    width: 70%;
+}
+
+.css {
+    width: 70%;
+}
+
+.js {
+    width: 45%;
+}
+
+.python {
+    width: 40%;
+}
+
+@media (max-width: 575px) {
+    .experience {
+        display: block;
+    }
+}
